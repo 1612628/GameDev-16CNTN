@@ -13,6 +13,8 @@ public class ReaperManWalking : MonoBehaviour
     private Rigidbody2D rg2d;
     private Animator anim;
 
+    private bool secondJumpAvailable;
+
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,7 @@ public class ReaperManWalking : MonoBehaviour
         rg2d = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
         grounded = true;
+        secondJumpAvailable = false;
     }
 
     // Update is called once per frame
@@ -28,10 +31,23 @@ public class ReaperManWalking : MonoBehaviour
         anim.SetBool("Grounded", grounded);
         anim.SetFloat("Speed", Mathf.Abs(Input.GetAxis("Horizontal")));
 
-        if (Input.GetButtonDown("Jump") && grounded)
+        if (grounded)
         {
-            rg2d.AddForce(Vector2.up * jumpPower);
+            if (Input.GetButtonDown("Jump"))
+            {
+                rg2d.AddForce(Vector2.up * jumpPower);
+                secondJumpAvailable = true;
+            }
         }
+        else
+        {
+            if (Input.GetButtonDown("Jump") && secondJumpAvailable)
+            {
+                rg2d.AddForce(Vector2.up * jumpPower);
+                secondJumpAvailable = false;
+            }
+        }
+
 
 
         transform.localScale = new Vector3(-0.2f, 0.2f, 1);
@@ -65,8 +81,6 @@ public class ReaperManWalking : MonoBehaviour
         {
             rg2d.velocity = new Vector2(-maxSpeed, rg2d.velocity.y);
         }
-
-
 
     }
 
