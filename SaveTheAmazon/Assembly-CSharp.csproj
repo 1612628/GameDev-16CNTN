@@ -63,8 +63,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\PlayerHandler.cs" />
-    <Compile Include="Assets\PlayHandler.cs" />
-    <Compile Include="Assets\SceneController.cs" />
     <Compile Include="Assets\StreamVideo.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />

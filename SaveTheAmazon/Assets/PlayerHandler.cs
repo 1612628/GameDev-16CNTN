@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.SceneManagement;
+
 public class PlayerHandler : MonoBehaviour
 {
-    public SceneController sceneController;
 
-    public void playGame()
+    public void gotoIngame()
     {
-        sceneController.gotoIngameScene1();
+        SceneManager.LoadScene(2);
     }
 }

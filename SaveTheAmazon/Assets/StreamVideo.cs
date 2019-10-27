@@ -5,11 +5,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
 
+using UnityEngine.SceneManagement;
 
 
 public class StreamVideo : MonoBehaviour
 {
-    public SceneController sceneController;
 
     public RawImage trailerImage;
 
@@ -50,7 +50,12 @@ public class StreamVideo : MonoBehaviour
 
         Debug.Log("Done Playing Video");
 
-        sceneController.gotoMenuScene();
+        gotoMenu();
+    }
+
+    void gotoMenu()
+    {
+        SceneManager.LoadScene(1);
     }
 
 

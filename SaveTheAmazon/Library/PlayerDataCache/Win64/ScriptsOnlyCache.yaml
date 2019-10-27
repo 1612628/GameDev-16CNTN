@@ -1810,25 +1810,13 @@ ScriptsOnlyBuild:
     className: EnvMapAnimator
   - hash:
       serializedVersion: 2
-      Hash: 3614ccfdb0a433c483f9f6f809bd8f71
+      Hash: a4d97326f683e550d8d476f8e7a0bc25
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: StreamVideo
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SceneController
-  - hash:
-      serializedVersion: 2
-      Hash: c6aeb46d7dc7f37b04264a5acb73cadd
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayHandler
-  - hash:
-      serializedVersion: 2
-      Hash: c6aeb46d7dc7f37b04264a5acb73cadd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerHandler
