@@ -1,4 +1,0 @@
-MSSV: 1612628
-
-Github:
-https://github.com/1612628/GameDev-16CNTN
