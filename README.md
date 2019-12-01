@@ -11,7 +11,7 @@
 
 ## Hướng dẫn chơi
 
-Chạy bo
+Chạy bo. Với mỗi màn chơi, người chơi cần tìm ra mấu chốt của từng màn, ví dụ: màn cần đi tìm vật phẩm để phá bẫy, màn cần nhặt thính tốc độ để tối ưu đường chạy cứu động vật,...
 
 Các động vật trong một khu rừng sẽ được đặt ngầu nhiễn trong một vòng lửa. Sau mỗi khoảng thời gian nhất định vòng lửa sẽ dần dần co lại. Nhiệm vụ của người chơi là đi cứu các động vật về nơi trực thăng cứu hộ ở giữa trung tâm vòng lửa.
 
